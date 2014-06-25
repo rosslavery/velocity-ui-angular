@@ -1,0 +1,25 @@
+{
+  "name": "rl-velocity",
+  "version": "0.0.1",
+  "authors": [
+    "Ross Lavery <rosslavery@gmail.com>"
+  ],
+  "description": "Velocity integration for AngularJS",
+  "main": "rl-velocity.js",
+  "keywords": [
+    "AngularJS"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-animate": "~1.2.15",
+    "angular": "~1.2.15",
+    "velocity": "~0.1.0"
+  }
+}
