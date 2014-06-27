@@ -20,6 +20,6 @@
   "dependencies": {
     "angular-animate": "~1.2.15",
     "angular": "~1.2.15",
-    "velocity": "~0.1.0"
+    "velocity": "~0.2.1"
   }
 }
