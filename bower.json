@@ -1,13 +1,13 @@
 {
   "name": "rl-velocity",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": "Ross Lavery <rosslavery@gmail.com>",
   "description": "Velocity integration for AngularJS",
   "main": "rl-velocity.js",
   "keywords": [
     "AngularJS",
     "angular",
-    "Velocity"
+    "Velocity",
     "animation",
     "animate",
     "velocityjs",
