@@ -51,3 +51,9 @@ angular.module('yourApp').config(function(rlVelocityConfig) {
 });
 
 ```
+
+## Credits
+Major credit goes to [@julianshapiro](https://github.com/julianshapiro) for creating VelocityJS which makes this wrapper-library possible.
+
+* [@hendrixer](https://github.com/Hendrixer) for providing the base for CSS class-parsing code
+* [@cgwyllie](https://github.com/cgwyllie) for providing the base for generating the 'opposite' animations
