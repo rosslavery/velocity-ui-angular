@@ -1,3 +1,6 @@
+/*! rl-velocity - v0.0.7 - 2014-07-04
+* https://github.com/rosslavery/rl-velocity
+* Copyright (c) 2014 ; License: MIT */
 (function(angular) {
   'use strict';
 

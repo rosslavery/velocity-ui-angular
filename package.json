@@ -1,6 +1,6 @@
 {
   "name": "rl-velocity",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Velocity integration for AngularJS",
   "main": "rl-velocity.js",
   "repository": {
