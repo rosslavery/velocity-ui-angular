@@ -18,10 +18,10 @@ Velocity integration for AngularJS.
 $ bower install rl-velocity --save
 ```
 
-* Add the `rl-velocity` module to your application:
+* Add the `rl.velocity` module to your application:
 
 ``` Javascript
-angular.module('yourApp', ['rl-velocity', 'ngAnimate']);
+angular.module('yourApp', ['rl.velocity', 'ngAnimate']);
 ```
 
 
