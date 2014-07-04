@@ -1,0 +1,32 @@
+{
+  "name": "rl-velocity",
+  "version": "0.0.5",
+  "description": "Velocity integration for AngularJS",
+  "main": "rl-velocity.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rosslavery/rl-velocity.git"
+  },
+  "keywords": [
+    "AngularJS",
+    "angular",
+    "Velocity",
+    "animation",
+    "animate",
+    "velocityjs",
+    "velocity"
+  ],
+  "author": "Ross Lavery <rosslavery@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rosslavery/rl-velocity/issues"
+  },
+  "homepage": "https://github.com/rosslavery/rl-velocity",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-uglify": "~0.5.0",
+    "load-grunt-tasks": "~0.6.0",
+    "grunt-shell": "~0.7.0"
+  }
+}
