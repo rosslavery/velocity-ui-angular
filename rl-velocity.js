@@ -1,4 +1,4 @@
-/*! rl-velocity - v0.1.0 - 2014-07-04
+/*! rl-velocity - v0.3.0 - 2014-07-08
 * https://github.com/rosslavery/rl-velocity
 * Copyright (c) 2014 Ross Lavery <rosslavery@gmail.com>; License: MIT */
 (function(angular) {
@@ -16,7 +16,7 @@
     duration: 300
   })
 
-  .factory('VelocityUtils', ['$timeout', 'rlVelocityConfig', function($timeout, rlVelocityConfig) {
+  .factory('VelocityUtils', ['rlVelocityConfig', function(rlVelocityConfig) {
 
     return {
 
@@ -59,8 +59,7 @@
           var parsedOptions = self._parseClassList($el[0].classList);
           var options = angular.extend(rlVelocityConfig, parsedOptions);
 
-          $el.velocity(animation, options);
-          $timeout(done, options.duration);
+          Container.Velocity.animate($el, animation, options).then(done);
         };
       },
 
@@ -72,8 +71,7 @@
           var options = angular.extend(rlVelocityConfig, parsedOptions);
 
           if (className === 'ng-hide') {
-            $el.velocity(animation, options);
-            $timeout(done, options.duration);
+            Container.Velocity.animate($el, animation, options).then(done);
           }
           else {
             done();
@@ -95,13 +93,6 @@
   // Iterate through the packaged effects to register them as Angular animations
   var className;
   angular.forEach(Container.Velocity.RegisterUI.packagedEffects, function(animationProps, animationName) {
-
-    /*
-      Disabled to experiment with $timeout method used above
-      Skips 'Reset' Codeblock in Velocity to avoid callback scoping issue
-      animationProps.reset && delete animationProps.reset;
-      Container.Velocity.RegisterUI(animationName, animationProps);
-    */
 
     className = _getClassName(animationName);
 
