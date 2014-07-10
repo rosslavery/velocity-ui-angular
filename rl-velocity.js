@@ -5,9 +5,8 @@
   'use strict';
 
   var Container = (window.jQuery || window.Zepto || window);
-  if (!Container.Velocity || !Container.Velocity.Utilities) {
-    console.log('Velocity UI Pack: Velocity must be loaded first. Aborting.');
-    return;
+  if (!Container.Velocity || !Container.Velocity.Utilities || !Container.Velocity.RegisterUI.packagedEffects) {
+    throw new Error('Velocity UI Pack: Velocity must be loaded first. Aborting.');
   }
 
   Container.rlVelocity = angular.module('rl.velocity', ['ngAnimate'])
