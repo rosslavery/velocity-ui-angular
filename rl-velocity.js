@@ -1,4 +1,4 @@
-/*! rl-velocity - v0.3.1 - 2014-07-10
+/*! rl-velocity - v0.3.2 - 2014-07-10
 * https://github.com/rosslavery/rl-velocity
 * Copyright (c) 2014 Ross Lavery <rosslavery@gmail.com>; License: MIT */
 (function(angular) {
