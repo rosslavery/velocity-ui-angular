@@ -1,7 +1,7 @@
 rl-velocity
 ===========
 
-Velocity integration for AngularJS.
+Velocity UI Pack integration for AngularJS. Combines the power of ngAnimate with the performance and simplicity of Velocity's UI Pack!
 
 ## Requirements
 * AngularJS (1.2+)
