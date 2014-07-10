@@ -5,7 +5,7 @@
   'use strict';
 
   var Container = (window.jQuery || window.Zepto || window);
-  if (!Container.Velocity || !Container.Velocity.Utilities || !Container.Velocity.RegisterUI.packagedEffects) {
+  if (!Container.Velocity || !Container.Velocity.Utilities || !Container.Velocity.RegisterUI) {
     throw new Error('Velocity UI Pack: Velocity must be loaded first. Aborting.');
   }
 
