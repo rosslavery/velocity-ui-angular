@@ -1,4 +1,4 @@
-/*! velocity-ui-angular - v0.3.3 - 2014-07-14
+/*! velocity-ui-angular - v0.3.4 - 2014-07-14
 * https://github.com/rosslavery/velocity-ui-angular
 * Copyright (c) 2014 Ross Lavery <rosslavery@gmail.com>; License: MIT */
 (function(angular) {
