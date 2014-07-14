@@ -1,5 +1,5 @@
-/*! rl-velocity - v0.3.2 - 2014-07-10
-* https://github.com/rosslavery/rl-velocity
+/*! velocity-ui-angular - v0.3.2 - 2014-07-14
+* https://github.com/rosslavery/velocity-ui-angular
 * Copyright (c) 2014 Ross Lavery <rosslavery@gmail.com>; License: MIT */
 (function(angular) {
   'use strict';
@@ -9,13 +9,13 @@
     throw new Error('Velocity UI Pack: Velocity must be loaded first. Aborting.');
   }
 
-  Container.rlVelocity = angular.module('rl.velocity', ['ngAnimate'])
+  Container.ngVelocity = angular.module('velocity.ui', ['ngAnimate'])
 
-  .constant('rlVelocityConfig', {
+  .constant('ngVelocityConfig', {
     duration: 300
   })
 
-  .factory('VelocityUtils', ['rlVelocityConfig', function(rlVelocityConfig) {
+  .factory('VelocityUtils', ['ngVelocityConfig', function(ngVelocityConfig) {
 
     return {
 
@@ -56,7 +56,7 @@
 
         return function($el, done) {
           var parsedOptions = self._parseClassList($el[0].classList);
-          var options = angular.extend(rlVelocityConfig, parsedOptions);
+          var options = angular.extend(ngVelocityConfig, parsedOptions);
 
           Container.Velocity.animate($el, animation, options).then(done);
         };
@@ -67,7 +67,7 @@
 
         return function ($el, className, done) {
           var parsedOptions = self._parseClassList($el[0].classList);
-          var options = angular.extend(rlVelocityConfig, parsedOptions);
+          var options = angular.extend(ngVelocityConfig, parsedOptions);
 
           if (className === 'ng-hide') {
             Container.Velocity.animate($el, animation, options).then(done);
@@ -95,7 +95,7 @@
 
     className = _getClassName(animationName);
 
-    Container.rlVelocity.animation(className, ['VelocityUtils', function(VelocityUtils) {
+    Container.ngVelocity.animation(className, ['VelocityUtils', function(VelocityUtils) {
       return VelocityUtils._createAngularAnimation(animationName);
     }]);
 

@@ -1,9 +1,9 @@
 {
-  "name": "rl-velocity",
+  "name": "velocity-ui-angular",
   "version": "0.3.2",
   "author": "Ross Lavery <rosslavery@gmail.com>",
-  "description": "Velocity integration for AngularJS",
-  "main": "rl-velocity.min.js",
+  "description": "Velocity UI integration for AngularJS",
+  "main": "velocity.ui.angular.min.js",
   "keywords": [
     "AngularJS",
     "angular",

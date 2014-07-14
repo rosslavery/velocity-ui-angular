@@ -1,4 +1,4 @@
-rl-velocity
+velocity-ui-angular
 ===========
 
 Velocity UI Pack integration for AngularJS. Combines the power of ngAnimate with the performance and simplicity of Velocity's UI Pack!
@@ -15,13 +15,13 @@ Velocity UI Pack integration for AngularJS. Combines the power of ngAnimate with
 * Install via bower:
 
 ``` shell
-$ bower install rl-velocity --save
+$ bower install velocity-ui-angular --save
 ```
 
-* Add the `rl.velocity` module to your application:
+* Add the `velocity.ui` module to your application:
 
 ``` Javascript
-angular.module('yourApp', ['rl.velocity', 'ngAnimate']);
+angular.module('yourApp', ['velocity.ui', 'ngAnimate']);
 ```
 
 
@@ -36,18 +36,18 @@ angular.module('yourApp', ['rl.velocity', 'ngAnimate']);
 Durations can be set on an individual basis by using the `velocity-duration-400` class, where 400 is the animation duration in milliseconds.
 
 ## Setting Default Options
-The following options can be configured via `rlVelocityConfig`:
+The following options can be configured via `ngVelocityConfig`:
 
 ### duration
 Type: `String|Number`
 
 Default: `300`
 
-To configure rl-velocity globally, set it via your applications `config` block:
+To configure velocity-ui-angular globally, set it via your applications `config` block:
 
 ``` Javascript
-angular.module('yourApp').config(function(rlVelocityConfig) {
-    rlVelocityConfig.duration = 1000;
+angular.module('yourApp').config(function(ngVelocityConfig) {
+    ngVelocityConfig.duration = 1000;
 });
 
 ```

@@ -1,11 +1,11 @@
 {
-  "name": "rl-velocity",
+  "name": "velocity-ui-angular",
   "version": "0.3.2",
-  "description": "Velocity integration for AngularJS",
-  "main": "rl-velocity.js",
+  "description": "Velocity UI integration for AngularJS",
+  "main": "velocity.ui.angular.min.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/rosslavery/rl-velocity.git"
+    "url": "git://github.com/rosslavery/velocity-ui-angular.git"
   },
   "keywords": [
     "AngularJS",
@@ -19,9 +19,9 @@
   "author": "Ross Lavery <rosslavery@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rosslavery/rl-velocity/issues"
+    "url": "https://github.com/rosslavery/velocity-ui-angular/issues"
   },
-  "homepage": "https://github.com/rosslavery/rl-velocity",
+  "homepage": "https://github.com/rosslavery/velocity-ui-angular",
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-contrib-jshint": "~0.10.0",

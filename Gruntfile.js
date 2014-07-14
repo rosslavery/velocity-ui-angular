@@ -4,6 +4,7 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    fileName: grunt.file.readJSON('package.json')['name'].replace(/-/g, '.'),
     banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
           '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
           '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
@@ -13,7 +14,7 @@ module.exports = function(grunt) {
       options: {
         jshintrc: true
       },
-      build: ['<%= pkg.name %>.js']
+      build: ['<%= fileName %>.js']
     },
     concat: {
       options: {
@@ -23,8 +24,8 @@ module.exports = function(grunt) {
         }
       },
       build: {
-        src: ['<%= pkg.name %>.js'],
-        dest: '<%= pkg.name %>.js'
+        src: ['<%= fileName %>.js'],
+        dest: '<%= fileName %>.js'
       }
     },
     uglify: {
@@ -33,8 +34,8 @@ module.exports = function(grunt) {
         mangle: true
       },
       build: {
-        src: '<%= pkg.name %>.js',
-        dest: '<%= pkg.name %>.min.js'
+        src: '<%= fileName %>.js',
+        dest: '<%= fileName %>.min.js'
       }
     },
     bump: {
