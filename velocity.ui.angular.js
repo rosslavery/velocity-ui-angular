@@ -58,8 +58,9 @@
           var parsedOptions = self._parseClassList($el[0].classList);
           var options = angular.extend(ngVelocityConfig, parsedOptions);
           options.display = $el.css('display') === 'flex' ? 'flex' : 'auto';
+          options.complete = done;
 
-          Container.Velocity.animate($el, animation, options).then(done);
+          Container.Velocity.animate($el, animation, options);
         };
       },
 
@@ -70,9 +71,10 @@
           var parsedOptions = self._parseClassList($el[0].classList);
           var options = angular.extend(ngVelocityConfig, parsedOptions);
           options.display = $el.css('display') === 'flex' ? 'flex' : 'auto';
+          options.complete = done;
 
           if (className === 'ng-hide') {
-            Container.Velocity.animate($el, animation, options).then(done);
+            Container.Velocity.animate($el, animation, options);
           }
           else {
             done();

@@ -3,7 +3,7 @@
   "version": "0.3.5",
   "author": "Ross Lavery <rosslavery@gmail.com>",
   "description": "Velocity UI integration for AngularJS",
-  "main": "velocity.ui.angular.min.js",
+  "main": "velocity.ui.angular.js",
   "keywords": [
     "AngularJS",
     "angular",
