@@ -1,6 +1,6 @@
 {
   "name": "velocity-ui-angular",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "author": "Ross Lavery <rosslavery@gmail.com>",
   "description": "Velocity UI integration for AngularJS",
   "main": "velocity.ui.angular.js",
