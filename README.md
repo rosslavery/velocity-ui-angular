@@ -4,8 +4,8 @@ velocity-ui-angular
 Velocity UI Pack integration for AngularJS. Combines the power of ngAnimate with the performance and simplicity of Velocity's UI Pack!
 
 ## Requirements
-* AngularJS (1.2+)
-* ngAnimate
+* AngularJS (1.5+)
+* ngAnimate (1.5+)
 * [Velocity](https://github.com/julianshapiro/velocity)
 * [Velocity UI Pack](https://github.com/julianshapiro/velocity)
 
