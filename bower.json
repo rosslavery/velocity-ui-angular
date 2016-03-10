@@ -1,6 +1,6 @@
 {
   "name": "velocity-ui-angular",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "author": "Ross Lavery <rosslavery@gmail.com>",
   "description": "Velocity UI integration for AngularJS",
   "main": "velocity.ui.angular.js",
@@ -24,8 +24,8 @@
     "tests"
   ],
   "dependencies": {
-    "angular-animate": ">=1.2.15",
-    "angular": ">=1.2.15",
-    "velocity": "~1.2.2"
+    "angular-animate": "~1.5.0",
+    "angular": "~1.5.0",
+    "velocity": "~1.2.3"
   }
 }
