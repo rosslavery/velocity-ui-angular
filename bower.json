@@ -24,8 +24,8 @@
     "tests"
   ],
   "dependencies": {
-    "angular-animate": "~1.2.15",
-    "angular": "~1.2.15",
-    "velocity": "~0.11.6"
+    "angular-animate": ">=1.2.15",
+    "angular": ">=1.2.15",
+    "velocity": "~1.2.2"
   }
 }
